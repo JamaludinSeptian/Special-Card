@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gesitya Alfina Damayanti</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="judul" id="judul">
+        <h1>Apakah Kamu Orang Yang Spesial Itu?</h1>
+        <div class="card-form">
+           <div class="card-style">
+                <h1>ISI DATA DI BAWAH INI MENGENAI PACAR MU</h1>
+                <table width="70%" class="card-table">
+                    <tr>
+                        <td>
+                            Nama Pacar Kamu
+                        </td>
+                        <td class="card-padding">
+                            :
+                        </td>
+                        <td>
+                            <input type="text" id="name">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Tanggal Jadian Kamu
+                        </td>
+                        <td>
+                            :
+                        </td>
+                        <td>
+                            <input type="text" id="tanggal">
+                        </td>
+                    </tr>
+                </table>
+                <button onclick="myFunction()">Lihat Hasilnya</button>
+           </div>
+        </div>
+   </div>
+   
+   
+   <div class="container" id="myDIV" >
+        <div class="content-box">
+            <h1>SELAMAT KAMU ADALAH PACAR AKU YANG PALING AKU CINTA</h1>
+            <h1>YOU ARE SPECIAL TO ME, GESITYA ALFINA DAMAYANTI</h1>
+            <a href="https://www.youtube.com/watch?v=3ql6lSe1E-M&ab_channel=WarnerMusicIndonesia" target="_blank"> <img src="gambar/special.jpeg" width="270px"></a>
+            <a href="index.html" class="btn">BALIK LAGI</a>
+        </div>
+   </div>
+
+   <script>
+    function myFunction() {
+      const name = document.getElementById("name").value;
+      const tanggal = document.getElementById("tanggal").value;
+
+      if(name == "jamal" || name == "jamaludin septian" || name == "Jamaludin Septian" || name == "jamaludin"){
+        if(tanggal == "27" || tanggal == "27 februari" || tanggal == "27 februari 2023" || tanggal == "27 Februari 2023"){
+            document.getElementById("myDIV").style.display = "block";
+            document.getElementById("judul").style.display = "none";
+        }else{
+            console.log("error");
+        }
+      }else{
+        console.log("error");
+      }
+    }
+    </script>
+</body>
+</html>
